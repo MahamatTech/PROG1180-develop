@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="layout" content="main"/>
+    
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+    <script src="../js/jquery/jquery-1.8.2.min.js" type="text/javascript" ></script>
+    <link href="../css/customize-template.css" type="text/css" media="screen, projection" rel="stylesheet" />
+
+    <style>
+        #body-content { padding-top: 40px;}
+        label.col-md-8 {
+            /* Other styling... */
+            text-align: right;
+            clear: both;
+            float:left;
+            margin-right:15px;
+        }
+    </style>
+</head>
+    <body>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button class="btn btn-navbar" data-toggle="collapse" data-target="#app-nav-top-bar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="dashboard.html" class="brand"><i class="icon-globe">Robotic Lawn Mowers</i></a>
+                    <div id="app-nav-top-bar" class="nav-collapse">
+                        <ul class="nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Configuration
+                                        <b class="caret hidden-phone"></b>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="/pages/lookup/product/index.html">Products</a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/lookup/type/index.html">Equipment Type</a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/lookup/brand/index.html">Equipment Brand</a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/lookup/province/index.html">Province</a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/lookup/city/index.html">City</a>
+                                        </li>
+                                        <li>
+                                            <a href="/pages/lookup/colour/index.html">Colour</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li>
+                                <a href="login.html">Logout</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="body-container">
+            <div id="body-content">
+                
+                    <div class="body-nav body-nav-vertical body-nav-fixed">
+                        <div class="container">
+                            <ul>
+                                <li>
+                                    <a href="/pages/home.html">
+                                        <i class="icon-home icon-large"></i> Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/pages/customer/index.html">
+                                        <i class="icon-user icon-large"></i> Customers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-shopping-cart icon-large"></i> Equipments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/pages/Invoice/index.html">
+                                        <i class="icon-file icon-large"></i> Invoices
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-search icon-large"></i> Search
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-list-alt icon-large"></i> Reports
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                
+        <section class="nav nav-page">
+        <div class="container">
+            <div class="row">
+                <div class="span7">
+                    <header class="page-header">
+                        <h3>Dashboard</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Home</li>
+                        </ol>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page container">
+        <div class="row">
+            <div class="span8">
+                <div class="box pattern pattern-sandstone">
+                    <div class="box-header">
+                        <i class="icon-list"></i>
+                        <h5>Announcements</h5>
+                        <button class="btn btn-box-right" data-toggle="collapse" data-target=".box-list">
+                            <i class="icon-reorder"></i>
+                        </button>
+                    </div>
+                    <div class="box-content box-list collapse in">
+                        <ul>
+                            <li>
+                                <div>
+                                    <span class="news-item-title txt-blue ">Sale on Emma Small Engine Lawnmowers!</span>
+                                    <p class="news-item-preview">The year is closing out, and while you wont need your mower yet, you will in the next year!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="news-item-title txt-blue">Our Christmas With You</span>
+                                    <p class="news-item-preview">Emma's Small Engines would like to announce our contribution to this years Gratham Christmas Festival! Meet you there!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="news-item-title">Halloween Weekend</a>
+                                    <p class="news-item-preview">This Halloween we'll be taking a little break. Have a happy Halloween, we'll get back to business on Saturday!</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="box-collapse">
+                            <button class="btn btn-box" data-toggle="collapse" data-target=".more-list" id="show-announcement">
+                                Show More
+                            </button>
+                        </div>
+                        <ul class="more-list collapse out">
+                            <li>
+                                <div>
+                                    <span class="news-item-title txt-blue">Repair Workshop Upgrade</span>
+                                    <p class="news-item-preview">Unfortunately, our repair shop is going to be having a bit of construction. Your mowers will need to wait until October 20th before we can continue. Sorry!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="news-item-title txt-blue">Hot Week</span>
+                                    <p class="news-item-preview">You need a new mower? A repair? We got you! Come into the shop with our coupon you can get here and get 15% off any one purchase!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <span class="news-item-title txt-blue">Welcome to Our New Website</span>
+                                    <p class="news-item-preview">The minds at Mindtech Force have made us a beautiful website! I'm sure you'll enjoy it's new features along with us.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="span8">
+                <div class="box">
+                    <div class="box-header">
+                        <i class="icon-search"></i>
+                        <h5>Record Search</h5>
+                    </div>
+                    <div class="box-content">
+                        <form class="form-inline">
+                            <div class="form-row">
+                                <div class="col-md-10">
+                                    <label for="searchOption">Search By : </label>
+                                    <input type="radio" id="Customer" name="searchOption" value="Customer" checked>
+                                    <label for="Customer">Customer</label>
+                                    <input type="radio" id="Equipment" name="searchOption" value="Equipment">
+                                    <label for="Equipment">Equipment</label>
+                                    <input type="radio" id="Invoice" name="searchOption" value="Invoice">
+                                    <label for="Invoice">Invoice</label>                                
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-8" style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+                                    <label for="searchText" class="col-md-4" style="flex: 0 0 25%; max-width: 25%;">Search Text : </label>
+                                    <input type="text" class="form-control" id="searchText" name="searchText" placeholder="Search..." maxlength="100" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-primary right" data-toggle="modal" data-placement="top" title="Search Customer Data">
+                            <i class="icon-circle-arrow-right"></i>
+                            Search Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!--<div class="span3">
+                <div class="box">
+                    <div class="box-content">
+
+                    </div>
+                </div>
+            </div>-->
+            
+            <div class="span16">
+                <div class="row">
+                    <div class="span8">
+                        
+
+<script type="text/javascript">
+    google.load('visualization', '1', {'packages': ['corechart']});
+    google.setOnLoadCallback(drawVisualization);
+    
+    function drawVisualization() {
+        visualization_data = new google.visualization.DataTable();
+        
+        visualization_data.addColumn('string', 'Task');
+        
+        visualization_data.addColumn('number', 'Monthly Sales');
+        visualization_data.addRow(['January', 620000]);
+        visualization_data.addRow(['February', 200000]);
+        visualization_data.addRow(['March', 360000]);
+        visualization_data.addRow(['April', 250000]);    
+        visualization_data.addRow(['May', 500000]);
+        visualization_data.addRow(['June', 400000]);
+        visualization_data.addRow(['August', 550000]);
+        visualization_data.addRow(['September', 100000]);
+        visualization_data.addRow(['October', 300000]);
+        visualization_data.addRow(['November', 900000]);
+        visualization = new google.visualization.PieChart(document.getElementById('piechart'));
+        visualization.draw(visualization_data, {title: 'Monthly Sales', height: 260});
+    }
+</script>
+
+                        <div class="box">
+                            <div class="box-header">
+                                <i class="icon-bar-chart"></i>
+                                <h5>Sales Report</h5>
+                            </div>
+                            <div class="box-content">
+                                <div id="piechart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <script type="text/javascript">
+                            google.load('visualization', '1', {'packages': ['corechart']});
+                            google.setOnLoadCallback(drawVisualization);
+                            
+                            function drawVisualization() {
+                                visualization_data = new google.visualization.DataTable();  
+                                visualization_data.addColumn('string', 'Task');            
+                                visualization_data.addColumn('number', 'Earned per Month');                
+                                visualization_data.addRow(['January', 620]);
+                                visualization_data.addRow(['February', 200]);
+                                visualization_data.addRow(['March', 360]);
+                                visualization_data.addRow(['April', 250]);    
+                                visualization_data.addRow(['May', 500]);
+                                visualization_data.addRow(['June', 400]);
+                                visualization_data.addRow(['August', 550]);
+                                visualization_data.addRow(['September', 100]);
+                                visualization_data.addRow(['October', 300]);
+                                visualization_data.addRow(['November', 900]);
+                                visualization = new google.visualization.ColumnChart(document.getElementById('barchart'));
+                                visualization.draw(visualization_data, {title: 'Christmas Party', height: 300}); 
+                            }
+                        </script>
+                        <div class="blockoff-left">
+                            <div id="barchart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+            </div>
+        </div>
+
+        <div id="spinner" class="spinner" style="display:none;">
+            Loading&hellip;
+        </div>
+
+        <footer class="application-footer">
+            <div class="container">
+                <p>Sales and Inventory System</p>
+                <div class="disclaimer">
+                    <p>MindTech Force. All right reserved.</p>
+                    <p>Copyright ©2021</p>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="../js/bootstrap/bootstrap-transition.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-alert.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-modal.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-dropdown.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-scrollspy.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-tab.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-tooltip.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-popover.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-button.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-collapse.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-carousel.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-typeahead.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-affix.js" type="text/javascript" ></script>
+        <script src="../js/bootstrap/bootstrap-datepicker.js" type="text/javascript" ></script>
+        <script src="../js/jquery/jquery-tablesorter.js" type="text/javascript" ></script>
+        <script src="../js/jquery/jquery-chosen.js" type="text/javascript" ></script>
+        <script src="../js/jquery/virtual-tour.js" type="text/javascript" ></script>
+        <script src="../js/home.js" type="text/javascript" ></script>
+        <script type="text/javascript">
+        $(function() {
+            $('#sample-table').tablesorter();
+            $('#datepicker').datepicker();
+            $(".chosen").chosen();
+        });
+    </script>
+
+    </body>
+</html>

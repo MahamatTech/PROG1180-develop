@@ -1,0 +1,248 @@
+[{
+  "id": 1,
+  "firstName": "John",
+  "middleName": "",
+  "lastName": "White",
+  "email": "jwhite@gmail.com",
+  "phone": "905-555-5551",
+  "address": "123 Strathmore",
+  "province": "Ontario",
+  "city": "Brampton",
+  "postalCode": "L3A 3B1",
+  "equipment": []
+},
+{
+  "id": 2,
+  "firstName": "Richard",
+  "middleName": "Miller",
+  "lastName": "Clent",
+  "email": "ricmil@gmail.com",
+  "phone": "504-845-4855",
+  "address": "11 Mytle",
+  "province": "Ontario",
+  "city": "Welland",
+  "postalCode": "L3A 36A",
+  "equipment": [
+    {
+      "id": 2,
+      "serial": "A00000001",
+      "description": "Lawn mower Air filter",
+      "color":"Grey",
+      "engineSize":0,
+      "bladeSize":0,
+      "type":"Filter",
+      "brand": "Honda",
+      "Date_Checkin": "2021-10-05",
+      "Date_Checkout": ""
+    }
+  ]
+},
+{
+  "id": 3,
+  "firstName": "Jason",
+  "middleName": "Hadson",
+  "lastName": "Joshi",
+  "email": "jasonhad@gmail.com",
+  "phone": "654-321-8214",
+  "address": "12 Grrand ave",
+  "province": "Ontario",
+  "city": "Ottawa",
+  "postalCode": "L28 367",
+  "equipment": [
+    {
+      "id": 3,
+      "serial": "B00000002",
+      "description": "Lawn mower Belts",
+      "color":"Blue",
+      "engineSize":2,
+      "bladeSize":1,
+      "type":"Belt",
+      "brand": "Universal",
+      "Date_Checkin": "2021-09-02",
+      "Date_Checkout": "2021-09-05"
+    }
+  ]
+},
+{
+  "id": 4,
+  "firstName": "Jackson",
+  "middleName": "William",
+  "lastName": "Shone",
+  "email": "Jack24@gmail.com",
+  "phone": "821-547-1234",
+  "address": "47 Niagar Rd",
+  "province": "Ontario",
+  "city": "Welland",
+  "postalCode": "L3A 3W3",
+  "equipment": [
+    {
+      "id": 4,
+      "serial": "C00000003",
+      "description": "Lawn mower Blade",
+      "color":"Grey",
+      "engineSize":0,
+      "bladeSize":7,
+      "type":"Blade",
+      "brand": "Hydro-Gear",
+      "Date_Checkin": "2021-09-01",
+      "Date_Checkout": "2021-09-05"
+    }
+  ]
+},
+{
+  "id": 5,
+  "firstName": "Virak",
+  "middleName": "Mason",
+  "lastName": "Hirani",
+  "email": "virk@gmail.com",
+  "phone": "486-127-8521",
+  "address": "82 Thames",
+  "province": "Ontario",
+  "city": "Niagara",
+  "postalCode": "L8A 37B",
+  "equipment": [
+    {
+      "id": 5,
+      "serial": "D00000004",
+      "description": "Lawn Mower Drive Sprockets 34 Tooth",
+      "color":"Grey",
+      "engineSize":0,
+      "bladeSize":0,
+      "type":"Sprockets",
+      "brand": "Snapper",
+      "Date_Checkin": "2021-10-08",
+      "Date_Checkout": "2021-10-09"
+    }
+  ]
+},
+{
+  "id": 6,
+  "firstName": "Yash",
+  "middleName": "Nitesh",
+  "lastName": "Hirani",
+  "email": "yashk@gmail.com",
+  "phone": "584-214-8014",
+  "address": "42 Gen St",
+  "province": "Ontario",
+  "city": "Kingston",
+  "postalCode": "W89 37B",
+  "equipment": [
+    {
+      "id": 6,
+      "serial": "E00000005",
+      "description": "Lawn Mower Engine Sump",
+      "color":"Grey",
+      "engineSize":0,
+      "bladeSize":0,
+      "type":"Engine Sump",
+      "brand": "Snapper",
+      "Date_Checkin": "2021-10-01",
+      "Date_Checkout": "2021-10-02"
+    }
+  ]
+},
+{
+  "id": 7,
+  "firstName": "Dhaval",
+  "middleName": "",
+  "lastName": "Rathod",
+  "email": "dhaval149@gmail.com",
+  "phone": "854-888-1247",
+  "address": "32 Gen St",
+  "province": "Ontario",
+  "city": "Kingston",
+  "postalCode": "W89 78B",
+  "equipment": [
+    {
+      "id": 7,
+      "serial": "F00000006",
+      "description": "Lawn Mower Governor",
+      "color":"Dull White",
+      "engineSize":0,
+      "bladeSize":0,
+      "type":"Governor Gear",
+      "brand": "Briggs and Stratton",
+      "Date_Checkin": "2021-10-18",
+      "Date_Checkout": "2021-10-19"
+    }
+  ]
+},
+{
+  "id": 8,
+  "firstName": "Paritosh",
+  "middleName": "",
+  "lastName": "Thanki",
+  "email": "par49@gmail.com",
+  "phone": "521-111-2222",
+  "address": "88 Sim St",
+  "province": "Ontario",
+  "city": "Kingston",
+  "postalCode": "W84 78C",
+  "equipment": [
+    {
+      "id": 8,
+      "serial": "G00000007",
+      "description": "Honda 16551ZM0010 Governor Arm",
+      "color":"Silver",
+      "engineSize":0,
+      "bladeSize":0,
+      "type":"Governor Arm",
+      "brand": "Honda",
+      "Date_Checkin": "2021-10-15",
+      "Date_Checkout": "2021-10-18"
+    }
+  ]
+},
+{
+  "id": 9,
+  "firstName": "Rythm",
+  "middleName": "",
+  "lastName": "Rathod",
+  "email": "rk47@gmail.com",
+  "phone": "217-588-6173",
+  "address": "65 Villy St",
+  "province": "Ontario",
+  "city": "Brampton",
+  "postalCode": "L8B 51P",
+  "equipment":[
+    {
+      "id": 9,
+      "serial": "H00000008",
+      "description": "Lawn Mower Wheel Rims",
+      "color":"Silver",
+      "engineSize":0,
+      "bladeSize":0,
+      "type":"Wheel Rims",
+      "brand": "Husqvarna",
+      "Date_Checkin": "2021-10-10",
+      "Date_Checkout": "2021-10-11"
+    }
+  ]
+},
+{
+  "id": 10,
+  "firstName": "Zindya",
+  "middleName": "",
+  "lastName": "Kelly",
+  "email": "zinfin7@gmail.com",
+  "phone": "215-222-9999",
+  "address": "20 Villy St",
+  "province": "Ontario",
+  "city": "Brampton",
+  "postalCode": "L8B 52P",
+  "equipment": [
+    {
+      "id": 10,
+      "serial": "I00000009",
+      "description": "Lawn Mower Wheel Motors",
+      "color":"Silver",
+      "engineSize":0,
+      "bladeSize":0,
+      "type":"Wheel Motor",
+      "brand": "Universal",
+      "Date_Checkin": "2021-10-01",
+      "Date_Checkout": "2021-10-06"
+    }
+  ]
+}
+]

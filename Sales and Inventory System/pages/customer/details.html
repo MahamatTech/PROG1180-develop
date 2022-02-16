@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" class="js-focus-visible" data-js-focus-visible="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="MindTech Force">
+    
+    <title>Customer Details</title>    
+    <!--<meta name="layout" content="main"/>-->
+    
+    <!--<script type="text/javascript" src="http://www.google.com/jsapi"></script>-->
+        <!-- Bootstrap core CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="/js/jquery/jquery-1.8.2.min.js" type="text/javascript" ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.min.js"></script>
+    <link href="/css/customize-template.css" type="text/css" media="screen, projection" rel="stylesheet" />
+
+    <style>
+        #body-content { padding-top: 40px;}
+        /* Create two equal columns that floats next to each other */
+        .column-1 {
+          float: left;
+          margin-left: 3%;
+          padding: 10px;
+          width: 30%;
+        }
+        .column-2 {
+          float: left;
+          margin-left: 3%;
+          padding: 10px;
+          width: 50%;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        button.btn.btn-link {
+            font-size: 1.3rem;
+            color: #000 !important;
+            text-decoration: none;
+            padding-left: 0px;
+        }
+        .modal-body {
+          overflow-y: auto;
+          max-height: 600px;
+          padding: 15px;
+        }
+        .modal-content {
+          height:600px;
+          width: 590px;
+        }
+        .modal-footer {
+          width: 570px;
+        }
+        .modal.fade.in {
+          top: 40%;
+        }
+    </style>
+</head>
+    <body data-new-gr-c-s-check-loaded="14.1033.0" data-gr-ext-installed="">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button class="btn btn-navbar" data-toggle="collapse" data-target="#app-nav-top-bar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="dashboard.html" class="brand"><i class="icon-globe">Robotic Lawn Mowers</i></a>
+                    <div id="app-nav-top-bar" class="nav-collapse">
+                        <ul class="nav">
+                            
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Data Configuration
+                                <b class="caret hidden-phone"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/pages/lookup/product/index.html">Products</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/lookup/type/index.html">Equipment Type</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/lookup/brand/index.html">Equipment Brand</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/lookup/province/index.html">Province</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/lookup/city/index.html">City</a>
+                                </li>
+                                <li>
+                                    <a href="/pages/lookup/colour/index.html">Colour</a>
+                                </li>
+                            </ul>
+                          </li>
+                            
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li>
+                                <a href="login.html">Logout</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="body-container">
+            <div id="body-content">
+                
+                    <div class="body-nav body-nav-vertical body-nav-fixed">
+                        <div class="container">
+                          <ul>
+                            <li>
+                                <a href="/pages/home.html">
+                                    <i class="icon-home icon-large"></i> Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/customer/index.html">
+                                    <i class="icon-user icon-large"></i> Customers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/equipment/index.html">
+                                    <i class="icon-shopping-cart icon-large"></i> Equipments
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/Invoice/index.html">
+                                    <i class="icon-file icon-large"></i> Invoices
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-search icon-large"></i> Search
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon-list-alt icon-large"></i> Reports
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                
+                
+        <section class="nav nav-page">
+        <div class="container">
+            <div class="row">
+                <div class="span7">
+                    <header class="page-header">
+                        <h3>Customer Details</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item" aria-current="page"><a href="/pages/home.html">Home</a></li>
+                            <li class="breadcrumb-item" aria-current="page"><a href="/pages/customer/index.html">Customer</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Customer Details</li>
+                        </ol>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page container">
+      <div class="alert alert-block alert-info">
+        <p>
+            This page displays Customer Detailed Information. You can add also Equipment for repairs on this page.
+        </p>
+      </div>
+      <div class="row">
+          <div class="span8">
+              <div class="box">
+                  <div class="box-header">
+                      <i class="icon-bookmark"></i>
+                      <h5>Shortcuts</h5>
+                  </div>
+                  <div class="box-content">
+                      <div class="btn-group-box">
+                          <button class="btn" style="width: 120px;" data-toggle="modal" data-placement="top" title="Adds New Invoice to the customer"><i class="icon-plus icon-large"></i><br/>New Invoice</button>
+                          <button class="btn" data-toggle="modal" data-placement="top" title="Search Customer"><i class="icon-search icon-large"></i><br/>Search</button>
+                          <button class="btn"><i class="icon-list-alt icon-large" data-toggle="modal" data-placement="top" title="Generate Report"></i><br/>Reports</button>
+                          <button class="btn"><i class="icon-bar-chart icon-large" data-toggle="modal" data-placement="top" title="See Dashboard"></i><br/>Charts</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="span8">
+            <div class="box">
+                <div class="box-content">
+                    <div class="form-inline">
+                        <div class="row">
+                          <div class="column-1">
+                              <label for="customerName">Customer Name: </label>
+                              
+                          </div>
+                          <div class="column-2">
+                            <label id="customerName">Customer Name</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="column-1">
+                            <label for="customerEmailAddress">Email Address: </label>
+                          </div>
+                          <div class="column-2">
+                            <label id="customerEmailAddress">Customer Name</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="column-1">
+                            <label for="customerPhone">Phone Number: </label>
+                          </div>
+                          <div class="column-2">
+                            <label id="customerPhone">Customer Name</label>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="column-1">
+                            <label for="customerAddress">Address: </label>
+                          </div>
+                          <div class="column-2">
+                            <label id="customerAddress">Customer Name</label>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <a href="/pages/customer/edit.html"><button type="submit" class="btn btn-primary right" data-toggle="modal" data-placement="top" title="Updates Customer personal information">
+                        <i class="icon-edit"></i>
+                        Edit
+                    </button></a>
+                    <button type="submit" class="btn btn-third" data-target="#confirmationModal"  data-toggle="modal" id="btnDelete" style="display:none;"data-placement="top" title="Deletes selected Customer record">Delete</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="page container">
+            <div class="container">
+                <div class="accordion" id="customerEquipmentList">
+                  <div class="card">
+                    <div class="card-header" id="equipmentList">
+                      <h5 class="mb-0">
+                        <button id="btn-list-equipment" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" data-dashlane-label="true" data-form-type="other">
+                          List of Equipments
+                        </button>
+                        <button style="float:right" type="button" class="btn btn-primary" data-toggle="modal" data-target="#equipmentModal" id="btnAddEquipment" data-dashlane-rid="2081001e4e21294c" data-dashlane-label="true" data-form-type="action" data-placement="top" title="Adds Equipment to Customer's record">
+                          Add Equipment
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse in" aria-labelledby="equipmentList" data-parent="#customerEquipmentList">
+                      <div class="card-body">
+                        <div class="table-responsive">
+                          <table class="table table-striped table-sm" id="dataTable">
+                            <thead>
+                              <tr>
+                                <th>Description</th>
+                                <th>Brand</th>
+                                <th>Type</th>
+                                <th>Date Checked-in</th>
+                                <th>Date Checked-out</th>
+                              </tr>
+                            </thead>
+                            <tbody id="equipmentDetails">
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          <!-- modal-->
+          <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="confirmationModalLabel">Confirmation</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p id="confirmationMessage">
+                    Are you sure you want to DELETE the record?
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-third" data-dismiss="modal" id="btnCustomerDeleteRecord">Delete</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Equipment Overlay -->
+          <div class="modal fade" id="equipmentModal" tabindex="-1" role="dialog" aria-labelledby="equipmentModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h3 class="modal-title" id="equipmentModalLabel">Equipment</h3>
+                    </div>
+                    <form id="equipmentForm">
+                      <div class="modal-body">
+                        <div class="form-row">
+                          <label for="equipmentSerial" class="col-form-label">Serial Number</label>
+                          <input type="text" class="form-control" id="equipmentSerial" name="equipmentSerial" placeholder="Serial Number" maxlength="15" required>
+                        </div>
+                        <div class="form-row">
+                          <label for="equipmentDescription" class="col-form-label">Description</label>
+                          <textarea class="form-control" id="equipmentDescription" rows="2" required maxlength="200" placeholder="Equipment Description"></textarea>
+                        </div>
+                        <div class="form-row">
+                          <label for="inputColour" class="col-form-label">Colour</label>
+                          <select id="inputColour" class="form-control" required>
+                            <option disabled selected>--Select Colour--</option>
+                            <option value="Black">Black</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Green">Green</option>
+                            <option value="Grey">Grey</option>
+                            <option value="Indigo">Indigo</option>
+                            <option value="Orange">Orange</option>
+                            <option value="Red">Red</option>
+                            <option value="Silver">Silver</option>
+                            <option value="Violet">Violet</option>
+                            <option value="Yellow">Yellow</option>
+                          </select>
+                        </div>
+                        <div class="form-row">
+                          <label for="engineSize" class="col-form-label">Engine Size</label>
+                          <input type="number" class="form-control" id="engineSize" name="engineSize" placeholder="Engine Size" aria-describedby="engineSizeHelp" >
+                          <small id="engineSizeHelp" class="form-text text-muted">Enginer Size should be between 1 - 30</small>
+                        </div>
+                        <div class="form-row">
+                          <label for="bladeSize" class="col-form-label">Blade Size</label>
+                          <input type="number" class="form-control" id="bladeSize" name="bladeSize" placeholder="Blade Size" aria-describedby="bladeSizeHelp">
+                          <small id="bladeSizeHelp" class="form-text text-muted">Blade Size should be between 1 - 30</small>
+                        </div>
+                        <div class="form-row">
+                          <label for="equipmentType" class="col-form-label">Equipment Type</label>
+                          <select id="equipmentType" class="form-control" required>
+                            <option disabled selected></option>
+                            <option value="Belt">Belt</option>
+                            <option value="Blade">Blade</option>
+                            <option value="Engine Sump">Engine Sump</option>
+                            <option value="Filter">Filter</option>
+                            <option value="Governor Arm">Governor Arm</option>
+                            <option value="Governor Gear">Governor Gear</option>
+                            <option value="Sprockets">Sprockets</option>
+                            <option value="Wheel Motor">Wheel Motor</option>
+                            <option value="Wheel Rims">Wheel Rims</option>                           
+                          </select>
+                        </div>
+                        <div class="form-row">
+                          <label for="equipmentBrand" class="col-form-label">Equipment Brand</label>
+                          <select id="equipmentBrand" class="form-control" required>
+                            <option disabled selected></option>
+                            <option value="Briggs and Stratton">Briggs and Stratton</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Husqvarna">Husqvarna</option>
+                            <option value="Hydro-Gear">Hydro-Gear</option>
+                            <option value="Snapper">Snapper</option>
+                            <option value="Universal">Universal</option>
+                          </select>
+                        </div>
+                      
+                    </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-placement="top" title="Goes back to selected Customer record">Close</button>
+                            <button type="submit" class="btn btn-primary" id="btnOverlayAdd" data-toggle="modal" data-placement="top" title="Adds Equipment to Customer record">Add</button>
+                            <button type="submit" class="btn btn-primary" id="btnOverlayUpdate" data-toggle="modal" data-placement="top" title="Updates selected Customer record">Update</button>
+                            <button type="submit" class="btn btn-third" id="btnOverlayCheckOut" data-toggle="modal" data-placement="top" title="Customer check out the equipment">Check Out</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+          <!-- end modal-->
+
+            </div>
+    </section>
+
+    
+
+            </div>
+        </div>
+
+        <div id="spinner" class="spinner" style="display:none;">
+            Loading&hellip;
+        </div>
+
+        <footer class="application-footer">
+            <div class="container">
+                <p>Sales and Inventory System</p>
+                <div class="disclaimer">
+                    <p>MindTech Force. All right reserved.</p>
+                    <p>Copyright ©2021</p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="/js/fancyTable.js"></script>
+        <script src="/js/customer/app.js"></script>
+    </body>
+</html>

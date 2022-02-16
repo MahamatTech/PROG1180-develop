@@ -1,0 +1,162 @@
+body {
+    font-size: .875rem;
+}
+  
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+  * Sidebar
+  */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 48px; /* Height of navbar */
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+/*
+  * Navbar
+  */
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, .25);
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.bg-green {
+  background-color: #61B15A !important;
+  color: #fff;
+}
+
+a.nav-link {
+    color: rgb(0, 0, 0) !important;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.right { float: right;  }
+
+button.btn.btn-primary.right a { color: white !important; }
+
+/*
+  * Utilities
+  */
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.breadcrumb { background-color: white !important;}
+
+/*
+tables
+*/
+
+#btnAddEquipment {
+  margin-bottom: 20px;
+}
+
+button.btn.btn-link {
+ font-size: 1.3rem;
+ color: #000 !important;
+ text-decoration: none;
+ padding-left: 0px;
+}
+
+#customerEquipmentList {
+  color: #000 !important;
+  cursor: none;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.data-link {
+  text-decoration: #61B15A;
+  color: #007bff !important;
+  cursor: pointer;
+}
+
+/* buttons */
+.btn-third {
+  background: #d11a2a;
+  color: #fff;
+}
+
+#btnOverlayAdd {
+  display: none;
+}
+
+#btnOverlayUpdate {
+  display: none;
+}
+
+#btnOverlayCheckOut {
+  display: none;
+}
+
+/* custom */
+
+.group-info {
+  border: 1px solid rgba(0,0,0,.125);
+  background-color: rgba(0,0,0,.03);
+  padding: 20px 20px;
+}
