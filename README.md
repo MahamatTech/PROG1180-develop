@@ -1,4 +1,4 @@
 # PROG1180
 This is for Niagara College Project PROG1180
 
-I develop Customer page
+I developed Customer and equipment pages
